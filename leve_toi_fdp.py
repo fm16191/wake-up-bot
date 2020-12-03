@@ -47,6 +47,7 @@ async def verif_reveil():
         if time == current_time:
             print("OK")
             await reveil(channel, user)
+            del users[user]
 
 async def loop():
     # asyncio.sleep(2)
