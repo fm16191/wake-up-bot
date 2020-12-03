@@ -57,7 +57,7 @@ async def loop():
 async def get_time(time):
     time = str(time)
     time = time.split(" ")[1].split(":")[:2]
-    time[0] = str(int(time[0])+11 % 24)
+    time[0] = str(int(time[0])+1 % 24)
     return ":".join(time)
 
 
