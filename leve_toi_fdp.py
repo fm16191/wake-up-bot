@@ -64,6 +64,7 @@ async def get_time(time):
 @bot.command(name = "setreveil", aliases = ["reveil"])
 async def setreveil(ctx, *args):
     global users
+    print(datetime.now())
     if len(args) == 0:
         await ctx.send("no args")
         return
