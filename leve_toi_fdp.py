@@ -48,12 +48,14 @@ async def verif_reveil():
             print("OK")
             await reveil(channel, user)
             del users[user]
+            return
+    await asyncio.sleep(10)
 
 async def loop():
     # asyncio.sleep(2)
     while True:
         await verif_reveil()
-        await asyncio.sleep(10)
+
 
 async def get_time(time):
     time = str(time)
