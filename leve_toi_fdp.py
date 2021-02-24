@@ -49,7 +49,7 @@ async def verif_reveil():
             await reveil(channel, user)
             del users[user]
             return
-    await asyncio.sleep(10)
+    await asyncio.sleep(30)
 
 async def loop():
     # asyncio.sleep(2)
